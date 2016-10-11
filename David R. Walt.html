@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://www.classtools.net/FB/1969-DT6Zd7 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>David R. Walt on 'Fakebook'</title>
+<meta name="description" content="David R. Walt on &#39;Fakebook&#39; Fakebook - create a fictional social profile at www.classtools.net">
+<meta name="keywords" content="fakebook,fake,profile,classtools,David R. Walt on &#39;Fakebook&#39;">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@classtools">
+<meta name="twitter:creator" content="@russeltarr">
+<meta name="twitter:title" content="FAKEBOOK from ClassTools.net">
+<meta name="twitter:description" content="Create a spoof social media profile for a person, theme, place or object being studied">
+<meta name="twitter:image" content="http://www.classtools.net/cubeportfolio-elements/img/1.jpg">
+
+<script src="./David R. Walt_files/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="./David R. Walt_files/style.css">
+
+
+</head>
+
+
+<body onload="init();firstLoad()" onbeforeunload="unloading()" style="">
+<div id="modal" class="modal" style="display: none;">
+<h1 align="center" style="font-family:Verdana, Geneva, sans-serif">Fakebook Loading: Please Wait...</h1>
+
+</div>
+<style>
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   speak for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+	zoom:1;
+    display:    block;
+    position:   fixed;
+    z-index:    9999999;
+    top:        0px;
+    left:       0px;
+    height:     100%;
+    width:      100%;
+	/*filter: alpha(opacity=50);*/
+	/*opacity: 0.5;*/
+    background: grey
+                url('../../_FAKEBOOK/uploadImage/images/spinner.gif') 
+                50% 50% 
+                no-repeat;
+}
+</style>
+
+
+
+ <p>&nbsp;</p>
+<div id="container" style="padding-right: 0px;">
+  <div id="header" data-intro="You can click here to add a wallpaper image" data-position="right">
+	
+            <img data-intro="Welcome to Fakebook!" data-position="top" id="profileImg" src="./David R. Walt_files/walt2016_1475090380.jpeg">
+            <span id="profileName" data-intro="Start by adding a name here" data-position="top">
+            <a href="javascript:addNameBox()"><span id="profileNmText" style="color:white">David R. Walt</span></a>
+            <input style="font-size:x-large;display:none" type="text" name="editProfileName" id="editProfileName">
+          
+            </span>
+            
+            <span style="position:relative;top:-170px;width:850px;float:right;overflow:hidden;background:#3C5A9A">
+            <img style="float:right;z-index:-1;margin:0;height:313px" id="wallpaperBtn" src="./David R. Walt_files/coverImage.jpg">
+    		</span>
+         
+    </div>
+    
+   
+    <div id="headerBar">
+    
+    </div>
+    
+    	
+    </div>
+    
+
+<div id="leftWrapper">
+
+<div id="aboutBox" data-intro="Add some profile information here" data-position="top">
+    	<div class="leftBox">
+        <div class="aboutTitle">About</div>
+        <span id="aboutBoxText" style="clear:both;padding-top:10px;font-size:small;;"><img height="10px" src="./David R. Walt_files/circle.gif">Tufts University Howard Hughes Medical Institute Professor<hr><img height="10px" src="./David R. Walt_files/circle.gif">Cofounder, Ultivue<hr><img height="10px" src="./David R. Walt_files/circle.gif">Cofounder, Illumina<hr><img height="10px" src="./David R. Walt_files/circle.gif">Cofounder, Quanterix<hr><img height="10px" src="./David R. Walt_files/circle.gif">University of Michigan Class of 1974<hr><img height="10px" src="./David R. Walt_files/circle.gif">SUNY Class of 1979</span>
+        <textarea class="animated" style="overflow: hidden; word-wrap: break-word; resize: none; height: 78px; display: none;" name="aboutBoxTextArea" id="aboutBoxTextArea">Born: CLICK HERE TO ADD!
+Family: CLICK HERE TO ADD!
+(edit and add as many lines as you like!)</textarea>
+        </div>
+    </div>
+	
+     <br>
+
+	
+    <div id="advert2">
+        
+     </div>
+
+    <div id="blocks" class="ui-sortable">
+               <div class="leftBox" data-intro="You can add blocks (e.g. &#39;friends&#39;, &#39;enemies&#39;, &#39;family&#39;) here" data-position="bottom">
+               <img src="./David R. Walt_files/delete.gif" class="deleteCross" id="cross">
+                        <div class="leftBoxTitle">Interests</div>
+                        <br>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/illumina_1475090954.jpg"><span class="leftBoxText">Illumina</span></span>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/quanterix_1475090970.png"><span class="leftBoxText">Quanterix</span></span>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/tufts_1475091007.jpg"><span class="leftBoxText">Tufts University</span></span>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/genetics_1475091021.jpg"><span class="leftBoxText">Genetics</span></span>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/entrepreneurship.jpg"><span class="leftBoxText">Entrepreneurship</span></span>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/chemistry.jpg"><span class="leftBoxText">Chemistry</span></span>
+      			</div>
+    </div>           
+            
+     <div id="addNewBlock">
+     <a href="javascript:attachNewBlock()">Add New Block</a>
+     </div>
+     <p>&nbsp;</p>
+     
+     
+     
+</div>
+
+    
+       
+                      <div id="mainArea" data-intro="You can start adding posts here" data-position="top">
+                      
+               
+                      	<span id="addPostWrapper" style="display: none;">
+                            <div id="postStatusHeader">
+                            <p><b>Add a post!</b>
+                            <br><span style="font-size:11px;color:grey"> 
+                            (TIP 1: You can add hyperlinks and links to YouTube/Vimeo videos too!)
+                            <br>(TIP 2: You can click on any image that appears to change it!)
+                            </span>
+                            </p>
+                              <p>
+                                Name
+                                <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input name="posterName" type="text" id="posterName" value="Name...." class="ui-autocomplete-input" autocomplete="off">
+                              Date
+                                <input name="posterDate" type="text" id="posterDate" value="earlier today....">
+                              </p>
+                            </div>
+                                <div id="postStatusBox">
+                                <textarea class="animated" name="postBox" id="postBox" style="overflow: hidden; word-wrap: break-word; resize: none; height: 26px;">Write something....</textarea>
+                                </div>
+                                
+                            <div id="postStatusFooter">
+                                <input type="button" class="blueBtn" name="but" id="but" value="Post" onclick="addPost(1,0)">
+                                <img id="postPic" class="postPic cameraIcon" src="./David R. Walt_files/camera.png">
+                                <input style="display:none" type="button" class="blueBtn" name="rmv" id="rmv" value="Remove" onclick="$(&#39;#postPic&#39;).attr(&#39;src&#39;, &#39;fbpics/camera.png&#39;);$(this).hide()">
+                            </div>
+                         </span>
+                            
+                            <div id="sortable" class="ui-sortable"><div id="p25" class="stat"><img class="postImg" id="postImg25" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName25">David R. Walt</span><br><span class="pDate" id="postDate25">October 1, 2016</span><br><span class="pText" id="postText25">Many people ask why companies choose to go public. Companies launch themselves on the public market because they want to get themselves into a position where they can really make and sell commercial products on a larger scale. However, with all of this new capital flowing into the company based on the value of their public shares, the company needs to make sure it  can guarantee long term revenue, for that is what truly fuels the value of the company.     </span><br><img class="postPic" id="postPic25" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(25,1)">Like</a> · <a href="javascript:addCommentBx(1,25)">Comment</a> · <a href="javascript:editPost(25)">Edit</a> · <a href="javascript:deletePost(25)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost25"></div><span id="likeBxPost25" style="display:none"><input class="likePost" id="likeInputPost25" value=""><input type="button" value="Submit" onclick="javascript:addLikes(25,1)"></span><div class="c" id="c25"></div></div><div id="p24" class="stat"><img class="postImg" id="postImg24" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName24">David R. Walt</span><br><span class="pDate" id="postDate24">September 28, 2016</span><br><span class="pText" id="postText24">Proud of my company, Quanterix, which has made a significant investment in ImmunArray, which could strengthen both companies' efforts towards addressing neurodegenerative disease diagnostics: <a href="https://www.genomeweb.com/proteomics" target="_blank">https://www.genomeweb.com/proteomics</a>-protein-research/quanterix-invests-immunarray-gains-access-brain-injury-biomarker            </span><br><img class="postPic" id="postPic24" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar" style="display: block;"><a href="javascript:addLikesBx(24,1)">Like</a> · <a href="javascript:addCommentBx(1,24)">Comment</a> · <a href="javascript:editPost(24)">Edit</a> · <a href="javascript:deletePost(24)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost24"></div><span id="likeBxPost24" style="display:none"><input class="likePost" id="likeInputPost24" value=""><input type="button" value="Submit" onclick="javascript:addLikes(24,1)"></span><div class="c ui-sortable" id="c24"><div id="com6" class="comment"><img id="comImg6" class="comImg" src="./David R. Walt_files/mgmt-donna_1475175146.png"><span class="comName" id="comName6">Donna J. Edmonds</span>&nbsp;<span class="comText" id="comText6">Thanks for the $$$ David!!          </span><div class="comBar"><a href="javascript:addLikesBx(6,2)">Like</a> · <a href="javascript:addCommentBx(0,6)">Edit</a> · <a href="javascript:deleteComment(6)">Delete</a></div><div class="likeBarCom" style="display:none" id="likesCom6"></div><span id="likeBxCom6" style="display:none"><input class="likeCom" id="likeInputCom6" value=""><input type="button" value="Submit" onclick="javascript:addLikes(6,2)"></span><br><img class="attachCommentPic" id="attachCommentPic6" src="./David R. Walt_files/57855dd852950_1475175257.jpg"></div></div></div><div id="p23" class="stat"><img class="postImg" id="postImg23" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName23">David R. Walt </span><br><span class="pDate" id="postDate23">September 28, 2016</span><br><span class="pText" id="postText23">As I mentioned in my lecture at Harvard's ES139 speakers course, many people often ask about how the venture capital firm adds value to the entrepreneur. I believe that the VC is essential towards providing its creativity and sector expertise for the startup. It is not just about the amount of capital a VC firm invests into the portfolio company--it is absolutely critical that the VC can help guide the early stage startup from a really great idea into a successful, disruptive business.              </span><br><img class="postPic" id="postPic23" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(23,1)">Like</a> · <a href="javascript:addCommentBx(1,23)">Comment</a> · <a href="javascript:editPost(23)">Edit</a> · <a href="javascript:deletePost(23)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost23"></div><span id="likeBxPost23" style="display:none"><input class="likePost" id="likeInputPost23" value=""><input type="button" value="Submit" onclick="javascript:addLikes(23,1)"></span><div class="c" id="c23"></div></div><div id="p22" class="stat"><img class="postImg" id="postImg22" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName22">David R. Walt</span><br><span class="pDate" id="postDate22">September 28, 2016</span><br><span class="pText" id="postText22">You became friends with ImmumArray             </span><br><img class="postPic" id="postPic22" src="./David R. Walt_files/friends_1475174515.jpg"><br><div id="postOptionsDiv" class="postBar" style="display: block;"><a href="javascript:addLikesBx(22,1)">Like</a> · <a href="javascript:addCommentBx(1,22)">Comment</a> · <a href="javascript:editPost(22)">Edit</a> · <a href="javascript:deletePost(22)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost22"></div><span id="likeBxPost22" style="display:none"><input class="likePost" id="likeInputPost22" value=""><input type="button" value="Submit" onclick="javascript:addLikes(22,1)"></span><div class="c ui-sortable" id="c22"><div id="com5" class="comment"><img id="comImg5" class="comImg" src="./David R. Walt_files/slider_picture0_1475174884.png"><span class="comName" id="comName5">ImmunArray</span>&nbsp;<span class="comText" id="comText5">Wooooo, yeah David! We're going to pioneer new approaches to medical diagnoses by focusing on the identification and analysis of molecular biomarkers in the blood!!              </span><div class="comBar"><a href="javascript:addLikesBx(5,2)">Like</a> · <a href="javascript:addCommentBx(0,5)">Edit</a> · <a href="javascript:deleteComment(5)">Delete</a></div><div class="likeBarCom" style="display:none" id="likesCom5"></div><span id="likeBxCom5" style="display:none"><input class="likeCom" id="likeInputCom5" value=""><input type="button" value="Submit" onclick="javascript:addLikes(5,2)"></span><br><img class="attachCommentPic" id="attachCommentPic5" src="./David R. Walt_files/camera.png" style="display: none;"></div></div></div><div id="p21" class="stat"><img class="postImg" id="postImg21" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName21">David R. Walt</span><br><span class="pDate" id="postDate21">September 23, 2016</span><br><span class="pText" id="postText21">Excited to launch my first product in Super Resolution microscopy with Ultivue today! Find out all about it with this news article:<br><a href="http://www.businesswire.com/news/home/20160923005675/en/Ultivue-Launches-Product-Super-Resolution" target="_blank">http://www.businesswire.com/news/home/20160923005675/en/Ultivue-Launches-Product-Super-Resolution</a>    </span><br><img class="postPic" id="postPic21" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(21,1)">Like</a> · <a href="javascript:addCommentBx(1,21)">Comment</a> · <a href="javascript:editPost(21)">Edit</a> · <a href="javascript:deletePost(21)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost21"></div><span id="likeBxPost21" style="display:none"><input class="likePost" id="likeInputPost21" value=""><input type="button" value="Submit" onclick="javascript:addLikes(21,1)"></span><div class="c" id="c21"></div></div><div id="p20" class="stat"><img class="postImg" id="postImg20" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName20">David R. Walt</span><br><span class="pDate" id="postDate20">September 20, 2016</span><br><span class="pText" id="postText20">Had a great time at Harvard University speaking in the conference course "Innovation in Science and Engineering". Great questions from the Harvard students - keep them coming!             </span><br><img class="postPic" id="postPic20" src="./David R. Walt_files/920_lecture_1475095907.png"><br><div id="postOptionsDiv" class="postBar" style="display: block;"><a href="javascript:addLikesBx(20,1)">Like</a> · <a href="javascript:addCommentBx(1,20)">Comment</a> · <a href="javascript:editPost(20)">Edit</a> · <a href="javascript:deletePost(20)">Delete</a></div><div class="likeBar" style="" id="likesPost20">Liked by ES-139 and 20 others</div><span id="likeBxPost20" style="display:none"><input class="likePost" id="likeInputPost20" value=""><input type="button" value="Submit" onclick="javascript:addLikes(20,1)"></span><div class="c ui-sortable" id="c20"><div id="com4" class="comment"><img id="comImg4" class="comImg" src="./David R. Walt_files/silhouette.jpg"><span class="comName" id="comName4">ES-139 Student</span>&nbsp;<span class="comText" id="comText4">Great tips you provided at the end!             </span><div class="comBar"><a href="javascript:addLikesBx(4,2)">Like</a> · <a href="javascript:addCommentBx(0,4)">Edit</a> · <a href="javascript:deleteComment(4)">Delete</a></div><div class="likeBarCom" style="" id="likesCom4">Liked by you</div><span id="likeBxCom4" style="display:none"><input class="likeCom" id="likeInputCom4" value=""><input type="button" value="Submit" onclick="javascript:addLikes(4,2)"></span><br><img class="attachCommentPic" id="attachCommentPic4" src="./David R. Walt_files/camera.png" style="display: none;"></div></div></div><div id="p19" class="stat"><img class="postImg" id="postImg19" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName19">David R. Walt</span><br><span class="pDate" id="postDate19">March 23, 2016</span><br><span class="pText" id="postText19">Excited to announce that one of my companies, Quanterix, has secured $46 million in its Series D Financing! These investments were led by Arch Overage Fund, Comorant Asset Management, and Trinitas Capital. I'm proud to say that now, Quanterix has a post-money valuation of over $200 million. We are excited to utilize this capital to expand our international reach and to develop 60 new assays by the end of 2016.     </span><br><img class="postPic" id="postPic19" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(19,1)">Like</a> · <a href="javascript:addCommentBx(1,19)">Comment</a> · <a href="javascript:editPost(19)">Edit</a> · <a href="javascript:deletePost(19)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost19"></div><span id="likeBxPost19" style="display:none"><input class="likePost" id="likeInputPost19" value=""><input type="button" value="Submit" onclick="javascript:addLikes(19,1)"></span><div class="c" id="c19"></div></div><div id="p18" class="stat"><img class="postImg" id="postImg18" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName18">David R. Walt</span><br><span class="pDate" id="postDate18">January 11, 2016</span><br><span class="pText" id="postText18">              <iframe id="http://www.youtube.com/watch?v=JBmOWNmj4Gk" class="vidFrame" width="500" height="320" src="./David R. Walt_files/JBmOWNmj4Gk.html" frameborder="0" allowfullscreen=""></iframe></span><br><img class="postPic" id="postPic18" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(18,1)">Like</a> · <a href="javascript:addCommentBx(1,18)">Comment</a> · <a href="javascript:editPost(18)">Edit</a> · <a href="javascript:deletePost(18)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost18"></div><span id="likeBxPost18" style="display:none"><input class="likePost" id="likeInputPost18" value=""><input type="button" value="Submit" onclick="javascript:addLikes(18,1)"></span><div class="c" id="c18"></div></div><div id="p17" class="stat"><img class="postImg" id="postImg17" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName17">David R. Walt</span><br><span class="pDate" id="postDate17">October 13, 2015</span><br><span class="pText" id="postText17">Excited to announce that my most recent venture, Ultivue, has raised $5.15 million in its Series A Round by investors ARCH Venture Partners and Hansjoerg Wyss. Ultivue is sciences tools company that seeks to provide the ultimate view into biology. Ultivue produces reagents that enable researchers to obtain microscopic images at an unprecedented resolution that vastly improve our understanding of biology and medicine. Check out Ultivue on 
+                            <a href="http://www.ultivue.com/" target="_blank">http://www.ultivue.com</a>!             </span><br><img class="postPic" id="postPic17" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(17,1)">Like</a> · <a href="javascript:addCommentBx(1,17)">Comment</a> · <a href="javascript:editPost(17)">Edit</a> · <a href="javascript:deletePost(17)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost17"></div><span id="likeBxPost17" style="display:none"><input class="likePost" id="likeInputPost17" value=""><input type="button" value="Submit" onclick="javascript:addLikes(17,1)"></span><div class="c" id="c17"></div></div><div id="p16" class="stat"><img class="postImg" id="postImg16" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName16">David R. Walt</span><br><span class="pDate" id="postDate16">September 1, 2015</span><br><span class="pText" id="postText16">Being agile when scaling up your business is incredibly important, especially when it comes to the technology that your business is offering. Do not persist in defending certain technologies that are utilized by your business as more advances and changes occur in the environment. While changes in the environment is out of your control and sometimes can be unfortunate to the value of your business, you are capable of controlling how you adjust your business's technology according to such changes. This agile mentality will allow you to make your business adapt and grow.     </span><br><img class="postPic" id="postPic16" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(16,1)">Like</a> · <a href="javascript:addCommentBx(1,16)">Comment</a> · <a href="javascript:editPost(16)">Edit</a> · <a href="javascript:deletePost(16)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost16"></div><span id="likeBxPost16" style="display:none"><input class="likePost" id="likeInputPost16" value=""><input type="button" value="Submit" onclick="javascript:addLikes(16,1)"></span><div class="c" id="c16"></div></div><div id="p15" class="stat"><img class="postImg" id="postImg15" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName15">David R. Walt</span><br><span class="pDate" id="postDate15">March 4, 2014</span><br><span class="pText" id="postText15">3 years ago, Quanterix garnered a lot of attention from a publication in Nature Biotechnology showing that its SiMoA assay was 1,700 times more sensitive than the ELISA at spotting prostate specific antigen (PSA). Now we are welcoming the first commercial release of the technology:<br><br> <iframe id="http://www.youtube.com/watch?v=5qmEmET8A4s" class="vidFrame" width="500" height="320" src="./David R. Walt_files/5qmEmET8A4s.html" frameborder="0" allowfullscreen=""></iframe></span><br><img class="postPic" id="postPic15" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(15,1)">Like</a> · <a href="javascript:addCommentBx(1,15)">Comment</a> · <a href="javascript:editPost(15)">Edit</a> · <a href="javascript:deletePost(15)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost15"></div><span id="likeBxPost15" style="display:none"><input class="likePost" id="likeInputPost15" value=""><input type="button" value="Submit" onclick="javascript:addLikes(15,1)"></span><div class="c" id="c15"></div></div><div id="p14" class="stat"><img class="postImg" id="postImg14" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName14">David R. Walt</span><br><span class="pDate" id="postDate14">October 29, 2013</span><br><span class="pText" id="postText14">shared "<a href="https://hbr.org/2013/10/dont" target="_blank">https://hbr.org/2013/10/dont</a>-build-your-startup-outside-of-silicon-valley"<br><br>Great article explaining why you should build your startup in Silicon Valley to take advantage of not only local talent, but also geo-localized investors. I founded Illumina in San Diego so that I could take advantage of the more concentrated investor community as well as the available talent to me. Looks like I made the right move!           </span><br><img class="postPic" id="postPic14" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(14,1)">Like</a> · <a href="javascript:addCommentBx(1,14)">Comment</a> · <a href="javascript:editPost(14)">Edit</a> · <a href="javascript:deletePost(14)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost14"></div><span id="likeBxPost14" style="display:none"><input class="likePost" id="likeInputPost14" value=""><input type="button" value="Submit" onclick="javascript:addLikes(14,1)"></span><div class="c" id="c14"></div></div><div id="p13" class="stat"><img class="postImg" id="postImg13" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName13">David R. Walt</span><br><span class="pDate" id="postDate13">March 2, 2012</span><br><span class="pText" id="postText13">Sharing Illumina's HiSqe 2000 <br> <iframe id="http://www.youtube.com/watch?v=d2AxXv_6UTQ" class="vidFrame" width="500" height="320" src="./David R. Walt_files/d2AxXv_6UTQ.html" frameborder="0" allowfullscreen=""></iframe></span><br><img class="postPic" id="postPic13" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(13,1)">Like</a> · <a href="javascript:addCommentBx(1,13)">Comment</a> · <a href="javascript:editPost(13)">Edit</a> · <a href="javascript:deletePost(13)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost13"></div><span id="likeBxPost13" style="display:none"><input class="likePost" id="likeInputPost13" value=""><input type="button" value="Submit" onclick="javascript:addLikes(13,1)"></span><div class="c" id="c13"></div></div><div id="p12" class="stat"><img class="postImg" id="postImg12" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName12">David R. Walt</span><br><span class="pDate" id="postDate12">March 2, 2012</span><br><span class="pText" id="postText12">The MiSeq system is a fully integrated sequencing ecosystem, in a compact and economical instrument. For results in hours, not days, MiSeq uses TruSeq, Illumina's reversible terminator-based sequencing by synthesis chemistry to deliver the fastest time to answer.<br><br> <iframe id="http://www.youtube.com/watch?v=t0akxx8Dwsk" class="vidFrame" width="500" height="320" src="./David R. Walt_files/t0akxx8Dwsk.html" frameborder="0" allowfullscreen=""></iframe></span><br><img class="postPic" id="postPic12" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(12,1)">Like</a> · <a href="javascript:addCommentBx(1,12)">Comment</a> · <a href="javascript:editPost(12)">Edit</a> · <a href="javascript:deletePost(12)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost12"></div><span id="likeBxPost12" style="display:none"><input class="likePost" id="likeInputPost12" value=""><input type="button" value="Submit" onclick="javascript:addLikes(12,1)"></span><div class="c" id="c12"></div></div><div id="p11" class="stat"><img class="postImg" id="postImg11" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName11">David R. Walt</span><br><span class="pDate" id="postDate11">January 25, 2012</span><br><span class="pText" id="postText11">Today, Hoffmann-La Roche made an unsolicited bid to buy Illumina for $44.50 per share or about $5.7 billion. While it's a great opportunity, I believe that Roche will limit the creativity and development of Illumina. Stay tuned to see what happens. </span><br><img class="postPic" id="postPic11" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(11,1)">Like</a> · <a href="javascript:addCommentBx(1,11)">Comment</a> · <a href="javascript:editPost(11)">Edit</a> · <a href="javascript:deletePost(11)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost11"></div><span id="likeBxPost11" style="display:none"><input class="likePost" id="likeInputPost11" value=""><input type="button" value="Submit" onclick="javascript:addLikes(11,1)"></span><div class="c" id="c11"></div></div><div id="p10" class="stat"><img class="postImg" id="postImg10" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName10">David R. Walt</span><br><span class="pDate" id="postDate10">May 23, 2010</span><br><span class="pText" id="postText10">We made it to Nature Biotechnology!<br><br>Today, Nature published Quanterix's research showing that its SiMoA assay was 1,700 times more sensitive than the ELISA at spotting prostate specific antigen (PSA).  Each year the PSA test is used to screen about 7 million men in the U.S. for cancer, and results from the test lead to 200,000 surgeries annually to remove the prostate. Quanterix is developing a PSA test to provide early detection of prostate cancer recurrence in men who have undergone surgery.<br><br>Cannot be more proud of the team!<br><br><a href="http://www.nature.com/nbt/journal/v28/n6/pdf/nbt.1641.pdf" target="_blank">http://www.nature.com/nbt/journal/v28/n6/pdf/nbt.1641.pdf</a> </span><br><img class="postPic" id="postPic10" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(10,1)">Like</a> · <a href="javascript:addCommentBx(1,10)">Comment</a> · <a href="javascript:editPost(10)">Edit</a> · <a href="javascript:deletePost(10)">Delete</a></div><div class="likeBar" style="" id="likesPost10">Liked by you and 26 others</div><span id="likeBxPost10" style="display:none"><input class="likePost" id="likeInputPost10" value=""><input type="button" value="Submit" onclick="javascript:addLikes(10,1)"></span><div class="c" id="c10"></div></div><div id="p9" class="stat"><img class="postImg" id="postImg9" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName9">David R. Walt</span><br><span class="pDate" id="postDate9">June 13, 2009</span><br><span class="pText" id="postText9">Today, Illumina announced the launch of our own Personal Full Genome Sequencing Service at a depth of 30X. I hope to see this technology change the world! </span><br><img class="postPic" id="postPic9" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(9,1)">Like</a> · <a href="javascript:addCommentBx(1,9)">Comment</a> · <a href="javascript:editPost(9)">Edit</a> · <a href="javascript:deletePost(9)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost9"></div><span id="likeBxPost9" style="display:none"><input class="likePost" id="likeInputPost9" value=""><input type="button" value="Submit" onclick="javascript:addLikes(9,1)"></span><div class="c" id="c9"></div></div><div id="p8" class="stat"><img class="postImg" id="postImg8" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName8">David R. Walt</span><br><span class="pDate" id="postDate8">December 25, 2008</span><br><span class="pText" id="postText8">Merry Christmas everyone. This has been an amazing year for Quanterix - Quanterix raised a $15-million financing from Arch Venture Partners, Bain Capital Ventures, and Flagship Ventures. Greatest Christmas present for me and the firm! </span><br><img class="postPic" id="postPic8" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(8,1)">Like</a> · <a href="javascript:addCommentBx(1,8)">Comment</a> · <a href="javascript:editPost(8)">Edit</a> · <a href="javascript:deletePost(8)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost8"></div><span id="likeBxPost8" style="display:none"><input class="likePost" id="likeInputPost8" value=""><input type="button" value="Submit" onclick="javascript:addLikes(8,1)"></span><div class="c" id="c8"></div></div><div id="p7" class="stat"><img class="postImg" id="postImg7" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName7">David R. Walt</span><br><span class="pDate" id="postDate7">June 1, 2007</span><br><span class="pText" id="postText7">Excited to announce the founding of Quanterix - Hoping to develop ground-breaking tools in high definition diagnostics! </span><br><img class="postPic" id="postPic7" src="./David R. Walt_files/quanterix_1475600478.png"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(7,1)">Like</a> · <a href="javascript:addCommentBx(1,7)">Comment</a> · <a href="javascript:editPost(7)">Edit</a> · <a href="javascript:deletePost(7)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost7"></div><span id="likeBxPost7" style="display:none"><input class="likePost" id="likeInputPost7" value=""><input type="button" value="Submit" onclick="javascript:addLikes(7,1)"></span><div class="c" id="c7"></div></div><div id="p6" class="stat"><img class="postImg" id="postImg6" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName6">David R. Walt</span><br><span class="pDate" id="postDate6">November 13, 2006</span><br><span class="pText" id="postText6">Illumina is going through the process of acquiring Hayward based Solexa, Inc. Solexa Ltd, based in Cambridge UK was founded in June 1998 by Shankar Balasubramanian, and David Klenerman to develop and commercialize genome sequencing technology invented by the founders in the University of Cambridge. Solexa INC was formed 2005 when Solexa Ltd reversed into Lynx Therapeutics of Hayward. technology uses also the DNA colony sequencing technology. It is being used to perform a range of analyses, including whole genome resequencing, gene expression analysis and small ribonucleic acid (RNA) analysis. </span><br><img class="postPic" id="postPic6" src="./David R. Walt_files/solexa_1475594345.jpg"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(6,1)">Like</a> · <a href="javascript:addCommentBx(1,6)">Comment</a> · <a href="javascript:editPost(6)">Edit</a> · <a href="javascript:deletePost(6)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost6"></div><span id="likeBxPost6" style="display:none"><input class="likePost" id="likeInputPost6" value=""><input type="button" value="Submit" onclick="javascript:addLikes(6,1)"></span><div class="c" id="c6"></div></div><div id="p5" class="stat"><img class="postImg" id="postImg5" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName5">David R. Walt</span><br><span class="pDate" id="postDate5">January, 2006</span><br><span class="pText" id="postText5">Was just granted $1 million by the Howard Hughes Medical Institute! This will help me continue to impact the lives of students and help improve students' experience studying the sciences. Remember, I measure my success by my outcomes not my outputs.       </span><br><img class="postPic" id="postPic5" src="./David R. Walt_files/capture_1475201641.png"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(5,1)">Like</a> · <a href="javascript:addCommentBx(1,5)">Comment</a> · <a href="javascript:editPost(5)">Edit</a> · <a href="javascript:deletePost(5)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost5"></div><span id="likeBxPost5" style="display:none"><input class="likePost" id="likeInputPost5" value=""><input type="button" value="Submit" onclick="javascript:addLikes(5,1)"></span><div class="c" id="c5"></div></div><div id="p4" class="stat"><img class="postImg" id="postImg4" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName4">David R. Walt</span><br><span class="pDate" id="postDate4">July 3, 2000</span><br><span class="pText" id="postText4">Illumina completed its initial public offering today! Celebrating with the team              </span><br><img class="postPic" id="postPic4" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(4,1)">Like</a> · <a href="javascript:addCommentBx(1,4)">Comment</a> · <a href="javascript:editPost(4)">Edit</a> · <a href="javascript:deletePost(4)">Delete</a></div><div class="likeBar" style="" id="likesPost4">Liked by you and 25 others</div><span id="likeBxPost4" style="display:none"><input class="likePost" id="likeInputPost4" value=""><input type="button" value="Submit" onclick="javascript:addLikes(4,1)"></span><div class="c" id="c4"></div></div><div id="p3" class="stat"><img class="postImg" id="postImg3" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName3">David R. Walt</span><br><span class="pDate" id="postDate3">July 1, 1998</span><br><span class="pText" id="postText3">Many people asked why Illumina was started in San Diego. It's because of the talent. We want the strongest scientists and engineers and California can provide Illumina with the best talent.              </span><br><img class="postPic" id="postPic3" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar" style="display: block;"><a href="javascript:addLikesBx(3,1)">Like</a> · <a href="javascript:addCommentBx(1,3)">Comment</a> · <a href="javascript:editPost(3)">Edit</a> · <a href="javascript:deletePost(3)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost3"></div><span id="likeBxPost3" style="display:none"><input class="likePost" id="likeInputPost3" value=""><input type="button" value="Submit" onclick="javascript:addLikes(3,1)"></span><div class="c ui-sortable" id="c3"><div id="com3" class="comment"><img id="comImg3" class="comImg" src="./David R. Walt_files/larrybock_1475593864.jpg"><span class="comName" id="comName3">Larry Bock</span>&nbsp;<span class="comText" id="comText3">I'd like to think it's for me </span><div class="comBar"><a href="javascript:addLikesBx(3,2)">Like</a> · <a href="javascript:addCommentBx(0,3)">Edit</a> · <a href="javascript:deleteComment(3)">Delete</a></div><div class="likeBarCom" style="display:none" id="likesCom3"></div><span id="likeBxCom3" style="display:none"><input class="likeCom" id="likeInputCom3" value=""><input type="button" value="Submit" onclick="javascript:addLikes(3,2)"></span><br><img class="attachCommentPic" id="attachCommentPic3" src="./David R. Walt_files/camera.png" style="display: none;"></div></div></div><div id="p2" class="stat"><img class="postImg" id="postImg2" src="./David R. Walt_files/johnstuelpnagel_1475593850.jpg"><span class="pName" id="postName2">John Stuelpnagel</span><br><span class="pDate" id="postDate2">June 2, 1998</span><br><span class="pText" id="postText2">Larry and I have decided on the name BeadArray - a fundamentally different approach to high-density arrays. </span><br><img class="postPic" id="postPic2" src="./David R. Walt_files/camera.png" style="display: none;"><br><div id="postOptionsDiv" class="postBar"><a href="javascript:addLikesBx(2,1)">Like</a> · <a href="javascript:addCommentBx(1,2)">Comment</a> · <a href="javascript:editPost(2)">Edit</a> · <a href="javascript:deletePost(2)">Delete</a></div><div class="likeBar" style="" id="likesPost2">Liked by David R. Walt, Larry Bock</div><span id="likeBxPost2" style="display:none"><input class="likePost" id="likeInputPost2" value=""><input type="button" value="Submit" onclick="javascript:addLikes(2,1)"></span><div class="c" id="c2"></div></div><div id="p1" class="stat"><img class="postImg" id="postImg1" src="./David R. Walt_files/walt2016_1475090380(1).jpeg"><span class="pName" id="postName1">David R. Walt</span><br><span class="pDate" id="postDate1">April 5, 1998</span><br><span class="pText" id="postText1">Officially founded Illumina with Larry Bock, John Stuelpnagel, Anthony Czarnik, and Mark Chee - very excited to see what this company can achieve in the coming years!                </span><br><img class="postPic" id="postPic1" src="./David R. Walt_files/illumina_1475099045.jpg"><br><div id="postOptionsDiv" class="postBar" style="display: block;"><a href="javascript:addLikesBx(1,1)">Like</a> · <a href="javascript:addCommentBx(1,1)">Comment</a> · <a href="javascript:editPost(1)">Edit</a> · <a href="javascript:deletePost(1)">Delete</a></div><div class="likeBar" style="display:none" id="likesPost1"></div><span id="likeBxPost1" style="display:none"><input class="likePost" id="likeInputPost1" value=""><input type="button" value="Submit" onclick="javascript:addLikes(1,1)"></span><div class="c ui-sortable" id="c1"><div id="com1" class="comment"><img id="comImg1" class="comImg" src="./David R. Walt_files/larrybock_1475593843.jpg"><span class="comName" id="comName1">Larry Bock</span>&nbsp;<span class="comText" id="comText1">Excited to work with you, David. John and I just negotiated an exclusive license to the technology we discussed at Tufts - hope it will work out.  </span><div class="comBar"><a href="javascript:addLikesBx(1,2)">Like</a> · <a href="javascript:addCommentBx(0,1)">Edit</a> · <a href="javascript:deleteComment(1)">Delete</a></div><div class="likeBarCom" style="display:none" id="likesCom1"></div><span id="likeBxCom1" style="display:none"><input class="likeCom" id="likeInputCom1" value=""><input type="button" value="Submit" onclick="javascript:addLikes(1,2)"></span><br><img class="attachCommentPic" id="attachCommentPic1" src="./David R. Walt_files/camera.png" style="display: none;"></div><div id="com2" class="comment"><img id="comImg2" class="comImg" src="./David R. Walt_files/johnstuelpnagel_1475593850.jpg"><span class="comName" id="comName2">John Stuelpnagel</span>&nbsp;<span class="comText" id="comText2">So excited! </span><div class="comBar"><a href="javascript:addLikesBx(2,2)">Like</a> · <a href="javascript:addCommentBx(0,2)">Edit</a> · <a href="javascript:deleteComment(2)">Delete</a></div><div class="likeBarCom" style="display:none" id="likesCom2"></div><span id="likeBxCom2" style="display:none"><input class="likeCom" id="likeInputCom2" value=""><input type="button" value="Submit" onclick="javascript:addLikes(2,2)"></span><br><img class="attachCommentPic" id="attachCommentPic2" src="./David R. Walt_files/camera.png" style="display: none;"></div></div></div>
+                            <p>&nbsp;</p>
+                            
+                            <span align="center" id="advert4" style="margin-left:20px">
+                            
+                            <!-- Fakebook Horizontal -->
+                           
+                            </span>
+                            
+                             <p>&nbsp;</p>
+                            
+                            </div> 
+                            
+                            
+                            <!-- INTRO -->                    
+<div id="introBlurb" style="display:none">
+<h3 align="center">"Fakebook" allows teachers and students to create imaginary profile pages  for study purposes.</h3>
+
+                <div align="center">
+                
+                <iframe id="videoIntro" width="398" height="299" frameborder="0" src="./David R. Walt_files/25366185.html"></iframe>
+                
+                </div>
+                
+                <p align="center">Use "Fakebook" to chart the plot of a book, the development of a character, a series of historical events, the debates and relationships between people, and so on!</p>
+                
+                <p align="center">Get started by entering a name at the top of the page. Then proceed to add friends, posts, comments and profile information.</p>
+                <p align="center">You can save your work and edit it again later.</p>
+</div>
+   <!-- INTRO -->  
+                            
+                        </div>
+                        
+                         
+                        
+                        
+                        <div id="rightBar">
+                      
+                            
+                        </div>
+                        
+                    
+
+
+<div id="topBar">
+
+</div>
+
+<div id="fixedRight" style="display: none;">
+fixedRight
+</div>
+<!-- <form method="post" name="reloadForm" id="reloadForm" action="http://www.classtools.net/FB/< ? echo($folder); ?>-< ? echo($subfolder); ?>"> -->
+<form method="post" name="reloadForm" id="reloadForm" action="http://www.classtools.net/_FAKEBOOK/savedLink.php">
+<input type="hidden" id="pwBox" name="pwBox" value="">
+<input type="hidden" id="savedURL" name="savedURL" value="http://www.classtools.net/FB/1969-DT6Zd7">
+
+</form>
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+
+
+		
+
+<div id="preloadQR" style="display:none"><img src="./David R. Walt_files/chart" alt="QR"></div> 
+
+
+<form name="deletetest" method="post" action="http://www.classtools.net/_FAKEBOOK/delete.php">
+<input type="hidden" id="editingMode" name="editingMode" value="">
+<input type="hidden" id="folders" name="folders" value="1969">
+<input type="hidden" id="subfolders" name="subfolders" value="DT6Zd7">
+</form>
+
+<div id="playGround" style="display:none">
+               <div class="leftBox" data-intro="You can add blocks (e.g. &#39;friends&#39;, &#39;enemies&#39;, &#39;family&#39;) here" data-position="bottom">
+               <img src="./David R. Walt_files/delete.gif" class="deleteCross" id="cross">
+                        <div class="leftBoxTitle">Interests</div>
+                        <br>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/illumina_1475090954.jpg"><span class="leftBoxText">Illumina</span></span>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/quanterix_1475090970.png"><span class="leftBoxText">Quanterix</span></span>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/tufts_1475091007.jpg"><span class="leftBoxText">Tufts University</span></span>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/genetics_1475091021.jpg"><span class="leftBoxText">Genetics</span></span>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/entrepreneurship.jpg"><span class="leftBoxText">Entrepreneurship</span></span>
+                        <span class="leftBoxElement"><img class="leftImg" src="./David R. Walt_files/chemistry.jpg"><span class="leftBoxText">Chemistry</span></span>
+      			</div>
+    </div><!-- use this for dumping temporary html to be manipulated by Jquery -->
+
+
+
+
+<style>
+
+html,body
+{
+margin: 0px;
+}
+
+.small
+{
+font-size:x-small;	
+}
+
+#loginBox
+{
+position:absolute;
+z-index:10;
+top:0px;
+left:10px;	
+color:black;
+}
+
+#login a:link {color:white;text-decoration:none; font-size:small;}
+#login a:active{color:white;text-decoration:none}
+#login a:visited{color:white;text-decoration:none}
+#login
+{
+font-family:Verdana, Geneva, sans-serif;
+z-index:9999;
+font-size:small;
+position:fixed;
+top:0px;
+left:0px;
+width:100%;
+text-align:left;
+margin:0px;
+background-color:#44619d;
+text-decoration:none;
+}
+</style>
+
+<!-- <script src="./David R. Walt_files/jquery-ui.min.js"></script> -->
+
+<link rel="stylesheet" href="./David R. Walt_files/jquery-ui.min.css">
+<script src="./David R. Walt_files/share.js"></script>
+
+
+<script src="./David R. Walt_files/min.js"></script>
+<link rel="stylesheet" type="text/css" href="./David R. Walt_files/style(1).css">
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxLoadedContent" style="width: 0px; height: 0px; overflow: hidden; float: left;"></div><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><div id="cboxNext" style="float: left;"></div><div id="cboxPrevious" style="float: left;"></div><div id="cboxSlideshow" style="float: left;"></div><div id="cboxClose" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; width: 504.734px;" class="autosizejs"></textarea><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all" id="ui-id-2" tabindex="0" style="display: none;"></ul></body></html>
